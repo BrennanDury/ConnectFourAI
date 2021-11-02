@@ -1,7 +1,7 @@
 # ConnectFourAI
 This project creates Connect Four AI using a variety of algorithms. AI strategies vary in sophistication from a simple minimax with a heuristic based on domain knowledge to an implementation of AlphaZero.
 
-The AlphaZero implementation is located in the AlphaZero folder, while all other strategies are located in the OtherStrategies folder.
+The AlphaZero implementation is located in the AlphaZero folder, while all other strategies are located in the OtherStrategies folder. The AlphaZero implementation is also fully contained in AlphaZeroC4.ipynb
 
 The AlphaZero strategy uses a Monte Carlo search tree to explore promising moves according to a Convolutional Neural Network. 200 searches are performed to calculate the best move. At the end of the searches, the most visited move is chosen. When traversing the tree, from a given board state, the most promising move to explore is the move that maximizes q(a) + c * p(a) * sqrt(n(b)) / (n(a) + 1), where q is the current estimation of the quality of a board, c is a hyperparameter controlling the amount of exploration vs exploitation, set to 4, p is the prior evaluation of a the probability of making the move leading to the board according the neural network, n is the number of times a board has been visited, a is the board state after an action, and b is the current board state. This function balances exploration of new information vs exploitation of current information.
 
