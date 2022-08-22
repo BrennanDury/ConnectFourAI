@@ -1,3 +1,9 @@
+# This project started as an assignment in high school to write a minimax player with a
+# handwritten heuristic. After learning the basics of machine learning in the
+# summer before sophomore year of college, I wanted to build stronger players with more
+# advanced techniques. This file is the best player that I wrote in high school.
+# For fun, I kept it in its original code formatting.
+
 package connectFour;
 
 public class DuryB_value3 implements connectFour.Player
